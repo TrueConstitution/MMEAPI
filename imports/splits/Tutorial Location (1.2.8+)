@@ -1,119 +1,119 @@
 {
   "triggers": [
-        {
-          "trigger": {
-            "class": "dev.mme.features.strikes.Splits$StringTrigger",
-            "data": {
-              "trigger": "[TUTORIAL] This message triggers phase 1"
-            }
-          },
-          "triggerType": "CHAT",
-          "displayName": {
-            "color": {
-              "name": "gold",
-              "rgb": 16755200
-            },
-            "text": "Phase 1"
-          }
-        },
-        {
-          "trigger": {
-            "class": "dev.mme.features.strikes.Splits$StringTrigger",
-            "data": {
-              "trigger": "[TUTORIAL] This title triggers phase 2"
-            }
-          },
-          "triggerType": "TITLE",
-          "displayName": {
-            "color": {
-              "name": "gold",
-              "rgb": 16755200
-            },
-            "text": "Phase 2"
-          }
-        },
-        {
-          "trigger": {
-            "class": "dev.mme.features.strikes.Splits$StringTrigger",
-            "data": {
-              "trigger": "[TUTORIAL] This subtitle triggers phase 3"
-            }
-          },
-          "triggerType": "SUBTITLE",
-          "displayName": {
-            "color": {
-              "name": "gold",
-              "rgb": 16755200
-            },
-            "text": "Phase 3"
-          }
-        },
-        {
-          "trigger": {
-            "class": "dev.mme.features.strikes.Splits$StringTrigger",
-            "data": {
-              "trigger": "[TUTORIAL] This actionbar triggers phase 4"
-            }
-          },
-          "triggerType": "ACTIONBAR",
-          "displayName": {
-            "color": {
-              "name": "gold",
-              "rgb": 16755200
-            },
-            "text": "Phase 4"
-          }
-        },
-        {
-          "trigger": {
-            "class": "dev.mme.features.strikes.Splits$RegexTrigger",
-            "data": {
-              "regex": "\\[TUTORIAL] This bossbar \\(anything goes here (.+)\\) will trigger phase 5"
-            }
-          },
-          "triggerType": "BOSSBAR_ADD",
-          "displayName": {
-            "color": {
-              "name": "gold",
-              "rgb": 16755200
-            },
-            "text": "Phase 5"
-          }
-        },
-        {
-          "trigger": {
-            "class": "dev.mme.features.strikes.Splits$BossbarPercentTrigger",
-            "data": {
-              "bossBarName": "[TUTORIAL] This bossBar upon reaching the percent will trigger phase 6",
-              "percent": 50.0
-            }
-          },
-          "triggerType": "BOSSBAR_PERCENT",
-          "displayName": {
-            "color": {
-              "name": "gold",
-              "rgb": 16755200
-            },
-            "text": "Phase 6"
-          }
+    {
+      "trigger": {
+        "class": "dev.mme.features.strikes.triggers.StringTrigger",
+        "data": {
+          "trigger": "[TUTORIAL] This message triggers phase 1"
         }
-      ],
-      "initTrigger": {
-        "trigger": {
-          "class": "dev.mme.features.strikes.Splits$StringTrigger",
-          "data": {
-            "trigger": "[TUTORIAL] This trigger triggers the split"
-          }
-        },
-        "triggerType": "CHAT"
       },
-      "endTrigger": {
-        "trigger": {
-          "class": "dev.mme.features.strikes.Splits$StringTrigger",
-          "data": {
-            "trigger": "[TUTORIAL] This trigger ends the split"
-          }
+      "triggerType": "CHAT",
+      "displayName": {
+        "color": {
+          "name": "gold",
+          "rgb": 16755200
         },
-        "triggerType": "CHAT"
+        "text": "Phase 1"
       }
+    },
+    {
+      "trigger": {
+        "class": "dev.mme.features.strikes.triggers.StringTrigger",
+        "data": {
+          "trigger": "[TUTORIAL] This title triggers phase 2"
+        }
+      },
+      "triggerType": "TITLE",
+      "displayName": {
+        "color": {
+          "name": "gold",
+          "rgb": 16755200
+        },
+        "text": "Phase 2"
+      }
+    },
+    {
+      "trigger": {
+        "class": "dev.mme.features.strikes.triggers.StringTrigger",
+        "data": {
+          "trigger": "[TUTORIAL] This subtitle triggers phase 3"
+        }
+      },
+      "triggerType": "SUBTITLE",
+      "displayName": {
+        "color": {
+          "name": "gold",
+          "rgb": 16755200
+        },
+        "text": "Phase 3"
+      }
+    },
+    {
+      "trigger": {
+        "class": "dev.mme.features.strikes.triggers.StringTrigger",
+        "data": {
+          "trigger": "[TUTORIAL] This actionbar triggers phase 4"
+        }
+      },
+      "triggerType": "ACTIONBAR",
+      "displayName": {
+        "color": {
+          "name": "gold",
+          "rgb": 16755200
+        },
+        "text": "Phase 4"
+      }
+    },
+    {
+      "trigger": {
+        "class": "dev.mme.features.strikes.triggers.RegexTrigger",
+        "data": {
+          "regex": "\\[TUTORIAL] This bossbar \\(anything goes here (.+)\\) will trigger phase 5"
+        }
+      },
+      "triggerType": "BOSSBAR_ADD",
+      "displayName": {
+        "color": {
+          "name": "gold",
+          "rgb": 16755200
+        },
+        "text": "Phase 5"
+      }
+    },
+    {
+      "trigger": {
+        "class": "dev.mme.features.strikes.triggers.BossbarPercentTrigger",
+        "data": {
+          "bossBarName": "[TUTORIAL] This bossBar upon reaching the percent will trigger phase 6",
+          "percent": 50.0
+        }
+      },
+      "triggerType": "BOSSBAR_PERCENT",
+      "displayName": {
+        "color": {
+          "name": "gold",
+          "rgb": 16755200
+        },
+        "text": "Phase 6"
+      }
+    }
+  ],
+  "initTrigger": {
+    "trigger": {
+      "class": "dev.mme.features.strikes.triggers.StringTrigger",
+      "data": {
+        "trigger": "[TUTORIAL] This trigger triggers the split"
+      }
+    },
+    "triggerType": "CHAT"
+  },
+  "endTrigger": {
+    "trigger": {
+      "class": "dev.mme.features.strikes.triggers.StringTrigger",
+      "data": {
+        "trigger": "[TUTORIAL] This trigger ends the split"
+      }
+    },
+    "triggerType": "CHAT"
+  }
 }
